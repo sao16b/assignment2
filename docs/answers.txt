@@ -38,3 +38,10 @@ j) 100 developers would benefit from the Dictator and Lieutenants workflow becau
 with a larger pool of developers, there's more potential for human error and conflicts. Having a 
 dictator who resolves these conflicts in lieutenant repositories, and who after thorough testing 
 pushes to the central repository, is ideal.
+
+5. OOP Principles
+The driving simulator prototype uses both polymorphism and encapsulation. Polymorphism is exemplified by the toString and mileage function. 
+Each type of vehicle inherits these virtual functions from either the Vehicle class or PoweredVehicle class, 
+but each vehicle has a different mileage calculation, so they override the virtual function and 
+implement their specific formula. Encapsulation is exemplified by the private member data of Jet, Car, and Bicycle. 
+This member data can only be accessed within their own class by get/set functions.
