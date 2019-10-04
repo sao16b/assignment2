@@ -8,19 +8,19 @@
 
 class HotAirBalloon : public PoweredVehicle {
     
- private:
-  int windSpeed;
+private:
+    int windSpeed;
     
- public:
-  HotAirBalloon();
+public:
+    HotAirBalloon();
     
-  explicit HotAirBalloon(string brand, string model, string fuelType, int windSpeed = 0);
+    explicit HotAirBalloon(string brand, string model, string fuelType, int windSpeed = 0);
     
-  virtual ~HotAirBalloon();
-  int getWindSpeed();
-  void setWindSpeed(int windSpeed);
-  virtual double mileageEstimate(double time);
-  virtual string toString();
+    virtual ~HotAirBalloon();
+    int getWindSpeed();
+    void setWindSpeed(int windSpeed);
+    virtual double mileageEstimate(double time);
+    virtual string toString();
 };
 
 #endif //DRIVINGSIMULATOR_HOTAIRBALLOON_H
