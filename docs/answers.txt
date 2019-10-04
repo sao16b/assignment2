@@ -1,0 +1,40 @@
+a) git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 533 bytes | 533.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sao16b/assignment2.git
+   873c063..8dde0a7  master -> master
+
+
+b) 8 commits; git rev-list master --all --count
+
+c) Wed Sep 25 18:13:30 2019 -0400; git log -1 .gitignore
+
+d) Branches help maintain a parallel development process
+(i.e. a new feature can be worked on separately from the main code).
+Errors can be fixed before being merged into the main code, effectively preventing a 
+buggy change from affecting others. Keeps workflows separate, and makes things cleaner!
+
+e) git log only works on committed history, and git status inspects the working directory
+
+f) git log --follow -- Vehicle.h
+
+g) git log --all --grep='file'
+
+h) I) Inheritance enables new objects to take properties of existing objects. Creates a parent/child relationship.
+  II) Polymorphism is the ability to redefine methods for derived classes, such as a unique draw function for every 
+derived class of Shape.
+  III) Encapsulation is basically making attributes and properties in a class private, and only allow outside access 
+via implemented get and set functions.
+
+i) The main difference between the Dictator and Lieutenants workflow and the Integration manager workflow is that 
+developers have the ability to push to the central repository in the Integration manager workflow. Only 
+the dictator is allowed to push to the central repository in the Dictator and Lieutenants workflow.
+
+j) 100 developers would benefit from the Dictator and Lieutenants workflow because typically, 
+with a larger pool of developers, there's more potential for human error and conflicts. Having a 
+dictator who resolves these conflicts in lieutenant repositories, and who after thorough testing 
+pushes to the central repository, is ideal.
