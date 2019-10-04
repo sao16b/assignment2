@@ -8,20 +8,20 @@
 
 class Jet : public PoweredVehicle {
     
- private:
-  int numberOfEngines;
+private:
+    int numberOfEngines;
     
- public:
-  Jet(); //zero argument constructor
-  explicit Jet(string brand, string model, string fuelType, int numberOfEngines = 1); //set PoweredVehicle, Vehical member data
+public:
+    Jet(); //zero argument constructor
+    explicit Jet(string brand, string model, string fuelType, int numberOfEngines = 1); //set PoweredVehicle, Vehical member data
     
-  virtual ~Jet(); //deconstructor
+    virtual ~Jet(); //deconstructor
     
-  int getNumberOfEngines(); //accessor
-  void setNumberOfEngines(int numberOfEngines); //mutator
-  virtual double mileageEstimate(double time);
+    int getNumberOfEngines(); //accessor
+    void setNumberOfEngines(int numberOfEngines); //mutator
+    virtual double mileageEstimate(double time);
     
-  virtual string toString();
+    virtual string toString();
 };
 
 #endif //DRIVINGSIMULATOR_JET_H
