@@ -8,12 +8,12 @@
 
 class Skateboard : public Vehicle {
     
- public:
-  //set Vehicle member data
-  explicit Skateboard(string brand, string model);
-  virtual ~Skateboard(); //deconstructor
-  virtual double mileageEstimate(double time);
-  virtual string toString();
+public:
+    //set Vehicle member data
+    explicit Skateboard(string brand, string model);
+    virtual ~Skateboard(); //deconstructor
+    virtual double mileageEstimate(double time);
+    virtual string toString();
 };
 
 #endif //DRIVINGSIMULATOR_SKATEBOARD_H
